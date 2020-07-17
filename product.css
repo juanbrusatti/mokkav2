@@ -93,3 +93,11 @@
   display: inline-block;
 }
 
+.im{
+  height:50px;
+  width:50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
