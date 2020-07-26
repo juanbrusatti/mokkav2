@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #010a15d6;
+}
+
+.card{
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+
+.front img{
+  width: 300px;
+  height: 400px;
+}
+
+.card .front{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+
+.card:hover .front{
+transform: rotateX(-180deg);
+}
+
+.card .back{
+  position: absolute;
+  
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+}
+
+.card .back:before{
+  
+  position: absolute;
+  top:0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.1);
+}
+
+.card:hover .back{
+transform: rotateX(0deg);
+}
+
+.card .back .details{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card .back .details h2{
+
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: #fff
+}
+
+.card .back .details h2 span{
+  color: #a7a7a7;
+  font-size: 16px;
+}
+
+.social-icons{
+  padding: 10px 0;
+}
+
+.social-icons a{
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  background: #262626;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.social-icons a .fa{
+  line-height: 36px;
+}
+
+.social-icons a:hover{
+  background: #e91e63;
+}
+
+.card2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+
+.front2 img{
+  width: 300px;
+  height: 400px;
+}
+
+.card2 .front2{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+
+.card2:hover .front2{
+transform: rotateX(-180deg);
+}
+
+.card2 .back2{
+  position: absolute;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+}
+
+.card2 .back2:before{
+  
+  position: absolute;
+  top:0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.1);
+}
+
+.card2:hover .back2{
+transform: rotateX(0deg);
+}
+
+.card2 .back2 .details2{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card2 .back2 .details2 h2{
+
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: #fff
+}
+
+.card2 .back2 .details2 h2 span{
+  color: #a7a7a7;
+  font-size: 16px;
+}
+
+.social-icons2{
+  padding: 10px 0;
+}
+
+.social-icons2 a{
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  background: #262626;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.social-icons2 a .fa{
+  line-height: 36px;
+}
+
+.social-icons2 a:hover{
+  background: #e91e63;
+}
+
+.card3{
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+
+.front3 img{
+  width: 300px;
+  height: 400px;
+}
+
+.card3 .front3{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+
+.card3:hover .front3{
+transform: rotateX(-180deg);
+}
+
+.card3 .back3{
+  position: absolute;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+}
+
+.card3 .back3:before{
+  
+  position: absolute;
+  top:0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.1);
+}
+
+.card3:hover .back3{
+transform: rotateX(0deg);
+}
+
+.card3 .back3 .details3{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card3 .back3 .details3 h2{
+
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: #fff
+}
+
+.card3 .back3 .details3 h2 span{
+  color: #a7a7a7;
+  font-size: 16px;
+}
+
+.social-icons3{
+  padding: 10px 0;
+}
+
+.social-icons3 a{
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  background: #262626;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.social-icons3 a .fa{
+  line-height: 36px;
+}
+
+.social-icons3 a:hover{
+  background: #e91e63;
+}
+.menu-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.toggle{
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 60px;
+  height: 60px;
+  z-index: 3;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.hamburger{
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #111;
+}
+
+.hamburger>div{
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #fff44f;
+  transition: .4s;
+}
+
+.hamburger>div:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #fff44f;
+  top: -10px;
+  left: 0;
+  transition: .4s;
+}
+
+.hamburger>div:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #fff44f;
+  top: 10px;
+  left: 0;
+  transition: .4s;
+}
+
+.toggle:checked + .hamburger>div{
+  transform: rotate(135deg);
+}
+
+.toggle:checked:hover + .hamburger>div{
+  transform: rotate(225deg);
+}
+
+.toggle:checked + .hamburger>div:before, .toggle:checked + .hamburger>div:after{
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  transition: .6s;
+}
+
+.menu > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-150%) translateY(-50%);
+    width: 1600px;
+    height: 1600px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .6s;
+}
+
+.menu > div > div{
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: .6s;
+}
+
+.menu > div > div > ul > li{
+  list-style: none;
+}
+
+.menu > div > div > ul > li > a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 550;
+  text-transform: uppercase;
+  margin: .5rem;
+  transition: .3s;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+.menu > div > div > ul > li > a:hover{
+  color: #fff44f;
+}
+
+.toggle:checked ~ .menu{
+  visibility: visible;
+}
+
+.toggle:checked ~ .menu > div{
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.toggle:checked ~ .menu > div > div{
+  opacity: 1;
+}
+
